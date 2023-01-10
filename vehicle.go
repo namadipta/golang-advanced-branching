@@ -117,7 +117,7 @@ func readJSONFile() Values {
 
 
 func showRating (model string) {
-	var ratingFound bool
+	ratingFound := false
 	for m,r := range vehicleResult{
 		if m == model{
 			fmt.Printf("Total Ratings:%v\tPositive:%v\tNegative:%v\tNeutral:%v", r.feedbackTotal, r.feedbackPositive, r.feedbackNegative, r.feedbackNeutral)
